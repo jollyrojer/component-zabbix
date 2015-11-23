@@ -156,7 +156,7 @@ application:
                   parameters:
                     commandCallTimeout: 5 minutes
                     connection: "{$.con}"
-                    sql-url: ["https://dl.dropboxusercontent.com/u/250836/zabbix-mysql/schema.sql", "https://dl.dropboxusercontent.com/u/250836/zabbix-mysql/images.sql", "https://dl.dropboxusercontent.com/u/250836/zabbix-mysql/data.sql"]
+                    sql-url: ["https://s3.amazonaws.com/qubell-starter-kit-artifacts/deps/Zabbix/schema.sql", "https://s3.amazonaws.com/qubell-starter-kit-artifacts/deps/Zabbix/images.sql", "https://s3.amazonaws.com/qubell-starter-kit-artifacts/deps/Zabbix/data.sql"]
               - install-zabbix:
                   action: chefsolo
                   precedingPhases: [ manage-schema ]
