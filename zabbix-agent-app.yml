@@ -20,8 +20,10 @@ application:
           image: 
             type: configuration(map<string, object>)
             suggestions:
-              "Win2008r2 (us-west-2) prepared": { ami: "us-east-1/ami-31620c54", user: "Administrator", type: "windows", hw: "m3.large"  }
-              "CentOS 6.5 (us-west-2) prepared": { ami: "us-east-1/ami-8997afe0", user: "root", type: "linux", hw: "m1.small" }
+              "Win2008r2 (us-east-1)": { ami: "us-east-1/ami-2debb748", user: "Administrator", type: "windows", hw: "m3.large"  }
+              "Win2008r2 (us-west-1)": { ami: "us-west-1/ami-93ff3cd7", user: "Administrator", type: "windows", hw: "m3.large"  }
+              "CentOS 6.5 (us-east-1)": { ami: "us-east-1/ami-8997afe0", user: "root", type: "linux", hw: "m1.small" }
+              "CentOS 6.5 (us-west-1)": { ami: "us-west-1/ami-1a013c5f", user: "root", type: "linux", hw: "m1.small" }
           windows-password: { type: configuration(string), name: "Windows administrator password" }
           instance-prefix: { type: configuration(string), name: "AWS tag prefix" }
           mirror: { type: configuration(string), name: "Cygwin installation binary URL" }

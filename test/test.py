@@ -39,7 +39,7 @@ class ZabbixAgentWindowsTestCase(ZabbixServerTestCase):
         {"name": name,
          "file": os.path.realpath(os.path.join(os.path.dirname(__file__), '../zabbix-agent-app.yml')),
 	 "settings": {"destroyInterval": destroy_interval},
-         "parameters": { "input.image": { "ami": "us-east-1/ami-31620c54", "user": "Administrator", "type": "windows", "hw": "m3.large"  }}
+         "parameters": { "input.image": { "ami": "us-east-1/ami-2debb748", "user": "Administrator", "type": "windows", "hw": "m3.large"  }}
         },
         {"name": "Zabbix Server",
          "file": os.path.realpath(os.path.join(os.path.dirname(__file__), '../component-zabbix.yml'))}
